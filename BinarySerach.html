@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var arr = [12, 40, 47, 67, 87];
+            var target = 400;
+            var flag = 0,low=0,high=arr.length-1;
+        
+            while (low <= high) {
+                var mid = Math.floor((low + high) / 2);
+
+                if (arr[mid] === target) {
+                    flag = 1;
+                    break;
+                } else if (arr[mid] < target) {
+                    low = mid + 1;
+                } else {
+                    high = mid - 1;
+                }
+            }
+
+            if (flag === 1) {
+                console.log("Value is found");
+            } else {
+                console.log("Value is not found");
+            }
+        </script>
+    </body>
+</html>
