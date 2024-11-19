@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //find the duplicate elemnet in array
+        let arr=[10,20,30,10,20];
+        console.log(arr)
+        let d=[];
+        let i;
+        let j;
+        for(i=0;i<arr.length-1;i++){
+
+            for(j=i+1;j<arr.length;j++)
+    
+            if(arr[i]==arr[j]){
+            
+                d.push(arr[i]);
+            }
+        }
+        console.log(d);
+    
+        
+    
+    </script> 
+</body>
+</html>
+
+
+
+ 
